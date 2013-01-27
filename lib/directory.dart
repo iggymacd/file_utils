@@ -20,3 +20,18 @@ bool isProjectFile(String path) {
       || path.endsWith(".dart")
       );
 }
+String getMimeType(file){
+  String mimeType = "text/html; charset=UTF-8";
+  int lastDot = file.name.lastIndexOf(".", file.name.length);
+  if (lastDot != -1) {
+    String extension = file.name.substring(lastDot);
+    if (extension == ".css") { mimeType = "text/css"; }
+    if (extension == ".js") { mimeType = "application/javascript"; }
+    if (extension == ".dart") { mimeType = "application/dart"; }
+    if (extension == ".ico") { mimeType = "image/vnd.microsoft.icon"; }
+    if (extension == ".png") { mimeType = "image/png"; }
+    if (extension == ".jpg") { mimeType = "image/jpg"; }
+    if (extension == ".gif") { mimeType = "image/gif"; }
+  }
+  return mimeType;
+}
