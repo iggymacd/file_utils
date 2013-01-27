@@ -10,4 +10,13 @@ bool isProjectFolder(currentPath) {
   );
 
 }
-
+bool isProjectFile(String path) {
+  return (path.endsWith(".js") 
+      || path.endsWith(".html")
+      || path.endsWith(".png")
+      || path.endsWith(".jpg")
+      || path.endsWith(".gif")
+      || path.endsWith(".css")
+      || path.endsWith(".dart")
+      );
+}
