@@ -1,0 +1,8 @@
+name:  file_utils
+description:  General purpose utilities for manipulating project files and folders
+
+dependencies:
+#  web_ui: any
+#  js: any
+#  browser: any
+#  unittest: any
