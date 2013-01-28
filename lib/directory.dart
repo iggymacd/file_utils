@@ -3,10 +3,10 @@ library file_utils;
 
 bool isProjectFolder(currentPath) {
   return (currentPath.endsWith("out") 
-//      || path.endsWith("Header")
-//      || path.endsWith("Images")
+      || currentPath.endsWith("Header")
+      || currentPath.endsWith("Images")
       || currentPath.endsWith("img")
-//      || path.endsWith("styles")
+      || currentPath.endsWith("styles")
   );
 
 }
